@@ -1,0 +1,85 @@
+// Файл ресурсов диалогового окна dialog.rc для программы "Price".
+
+#include "dialog.h"
+
+price DIALOG 1, 1, 300, 250 // Имя и координаты верхнего левого угла
+        // диалогового окна "Price" и
+        //его размеры по горизонтали и вертикали.
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU | WS_TABSTOP
+        // Стили диалогового окна.
+CAPTION "Price" // Заголовок диалогового окна.
+{
+CONTROL "Розрахунок ціни продукції", ID_STATIC_TITLE, "STATIC",
+        SS_CENTER, 50, 10, 200, 10 // Статический текст.
+        // Последний блок параметров предложения CONTROL представляет собой
+        // четыре числа, задающие координаты элемента в диалоговом окне,
+        // а также его размеры.
+CONTROL "Вихідні дані" ID_STATIC_TEXT1, "STATIC", SS_CENTER,
+        50, 30, 200, 10
+        // Статический текст.
+CONTROL "3729.60", ID_PRIME_COST, "EDIT", ES_CENTER | WS_BORDER |
+        WS_TABSTOP, 40, 50, 50, 10
+        // Окно редактирования.
+CONTROL "Собівартість продукції, грн.", ID_STATIC_PRIME_COST,
+        "STATIC", SS_LEFT, 100, 50, 150, 10
+        // Статический текст.
+CONTROL "559.44", ID_PROFIT, "EDIT", ES_CENTER | WS_BORDER | WS_TABSTOP,
+        40, 70, 50, 10
+        // Окно редактирования.
+CONTROL "Прибуток, грн.", ID_STATIC_PROFIT,
+        "STATIC", SS_LEFT, 100, 70, 150, 10
+         // Статический текст.
+CONTROL "857.81", ID_TAC, "EDIT", ES_CENTER | WS_BORDER |WS_TABSTOP,
+        40, 90, 50, 10
+        // Окно редактирования.
+CONTROL "Податок на додану вартість (ПДВ), грн.", ID_STATIC_TAC,
+        "STATIC", SS_LEFT, 100, 90, 150, 10
+        // Статический текст.
+CONTROL "900.0", ID_TAX, "EDIT", ES_CENTER | WS_BORDER | WS_TABSTOP,
+         40, 110, 50, 10
+        // Окно редактирования.
+CONTROL "Інші податки та взноси у соцфонди, грн.", ID_STATIC_TAX,
+        "STATIC", SS_LEFT, 100, 110, 150, 10
+        // Статический текст.
+CONTROL "0.0", ID_EXCISE, "EDIT", ES_CENTER | WS_BORDER | WS_TABSTOP,
+        40, 130, 50, 10
+        // Окно редактирования.
+CONTROL "Акцизний збір, грн.", ID_STATIC_EXCISE,
+        "STATIC", SS_LEFT, 100, 130, 150, 10
+        // Статический текст.
+CONTROL "0.0", ID_SALE_INCREASE, "EDIT", ES_CENTER | WS_BORDER | WS_TABSTOP,
+        40, 150, 50, 10
+        // Окно редактирования.
+CONTROL "Гуртово-збутова надбавка, грн.", ID_STATIC_SALE_INCREASE,
+        "STATIC", SS_LEFT, 100, 150, 150, 10
+        // Статический текст.
+CONTROL "0.0", ID_TRADE_INCREASE, "EDIT", ES_CENTER | WS_BORDER | WS_TABSTOP,
+        40, 170, 50, 10
+        // Окно редактирования.        
+CONTROL "Торгівельна надбавка, грн.", ID_STATIC_TRADE_INCREASE,
+        "STATIC", SS_LEFT, 100, 170, 150, 10
+        // Статический текст.
+CONTROL "Результат розрахунку" ID_STATIC_TEXT2, "STATIC", SS_CENTER,
+        50, 190, 200, 10
+        // Статический текст.
+CONTROL "", ID_PRICE, "EDIT", ES_CENTER | WS_BORDER | WS_TABSTOP |
+        ES_READONLY, 40, 210, 50, 10
+        // Окно редактирования.
+CONTROL "Ціна продукції, грн.", ID_STATIC_PRICE,
+        "STATIC", SS_LEFT, 100, 210, 150, 10
+        // Статический текст.
+CONTROL "Розрахувати", ID_CALCULATION, "BUTTON", BS_PUSHBUTTON | WS_TABSTOP,
+        20, 230, 50, 10
+        // Нажимаемая кнопка.
+CONTROL "Зберегти розрахунок", ID_SAVE, "BUTTON", BS_PUSHBUTTON | WS_TABSTOP,
+        80, 230, 80, 10
+        // Нажимаемая кнопка.
+CONTROL "Довідка", ID_HELP, "BUTTON", BS_PUSHBUTTON | WS_TABSTOP,
+        170, 230, 50, 10
+        // Нажимаемая кнопка.
+CONTROL "Вихід", ID_EXIT, "BUTTON", BS_PUSHBUTTON | WS_TABSTOP,
+        230, 230, 50, 10
+        // Нажимаемая кнопка.
+}
+
+

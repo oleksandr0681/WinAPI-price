@@ -1,0 +1,20 @@
+
+BODY
+{
+	BACKGROUND-COLOR: FFEBCD;
+}
+
+H1
+{
+	TEXT-ALIGN: CENTER;
+}
+
+A:link
+{
+	COLOR: C03030;
+}
+
+A:visited
+{
+	COLOR: 702020;
+}
